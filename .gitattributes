@@ -1,0 +1,3 @@
+*.vi -crlf -diff -merge
+*.lvlib -crlf -diff -merge
+*.ctl -crlf -diff -merge
