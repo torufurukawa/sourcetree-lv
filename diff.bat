@@ -6,4 +6,4 @@
 @echo %5
 @echo %6
 
-echo msgbox "hello",vbCritical,"title" > %TEMP%/msgboxtest.vbs & %TEMP%/msgboxtest.vbs
+echo msgbox "%1::::%2::::%3",vbCritical,"title" > %TEMP%/msgboxtest.vbs & %TEMP%/msgboxtest.vbs
