@@ -1,15 +1,13 @@
-@echo execfile    : %0
-@echo %1
-@echo %2
-@echo %3
-@echo %4
-@echo %5
-@echo %6
+@echo off
 
-set REMOTE=%CD%\%1
+set REMOTE_FILENAME=%1
+set REMOTE_FILENAME=%REMOTE_FILENAME:\"=%
+set REMOTE=%CD%\%REMOTE_FILENAME%
 echo %REMOTE%
 
-REM TODO \" を空文字列に置換する
+set LOCAL=%2
+set LOCAL=%LOCAL:/=\%
+echo %LOCAL%
 
-REM echo msgbox "%REMOTE%::::%2::::%3",vbCritical,"title" > %TEMP%/msgboxtest.vbs & %TEMP%/msgboxtest.vbs
-REM "C:\Program Files (x86)\National Instruments\Shared\LabVIEW Compare\LVCompare.exe" %1 %2
+rem echo msgbox "%REMOTE%::::%LOCAL%",vbCritical,"title" > %TEMP%/msgboxtest.vbs & %TEMP%/msgboxtest.vbs
+"C:\Program Files (x86)\National Instruments\Shared\LabVIEW Compare\LVCompare.exe" "%REMOTE%" "%LOCAL%"
