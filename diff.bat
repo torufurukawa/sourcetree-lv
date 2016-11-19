@@ -1,10 +1,13 @@
 @echo off
+setlocal
 
+REM Clean remote file path
 set REMOTE_FILENAME=%1
 set REMOTE_FILENAME=%REMOTE_FILENAME:\"=%
 set REMOTE=%CD%\%REMOTE_FILENAME%
 echo %REMOTE%
 
+REM Clean local file path
 set LOCAL=%2
 set LOCAL=%LOCAL:/=\%
 echo %LOCAL%
