@@ -6,4 +6,10 @@
 @echo %5
 @echo %6
 
-echo msgbox "%1::::%2::::%3",vbCritical,"title" > %TEMP%/msgboxtest.vbs & %TEMP%/msgboxtest.vbs
+set REMOTE=%CD%\%1
+echo %REMOTE%
+
+REM TODO \" を空文字列に置換する
+
+REM echo msgbox "%REMOTE%::::%2::::%3",vbCritical,"title" > %TEMP%/msgboxtest.vbs & %TEMP%/msgboxtest.vbs
+REM "C:\Program Files (x86)\National Instruments\Shared\LabVIEW Compare\LVCompare.exe" %1 %2
