@@ -1,0 +1,1 @@
+DIFF_CMD="C:\Program Files (x86)\National Instruments\Shared\LabVIEW Compare\LVCompare.exe"

@@ -1,3 +1,8 @@
+SCRIPT_DIR=$(cd $(dirname ${BASH_SOURCE:-$0}); pwd)
+echo "${SCRIPT_DIR}"
+source "${SCRIPT_DIR}/config.txt"
+exit
+
 # Clean remote file path
 REMOTE_FILENAME=$1
 REMOTE_PATH=$(pwd)/./${REMOTE_FILENAME}
@@ -9,6 +14,5 @@ LOCAL_PATH=$2
 LOCAL_WINPATH=$(cygpath -d "${LOCAL_PATH}")
 echo ${LOCAL_WINPATH}
 
-# Run LabVIEW Compare
-DIFF="C:\Program Files (x86)\National Instruments\Shared\LabVIEW Compare\LVCompare.exe"
-"${DIFF}" "${REMOTE_WINPATH}" "${LOCAL_WINPATH}"
+# Run LabVIEW compare tools
+"${DIFF_CMD}" "${REMOTE_WINPATH}" "${LOCAL_WINPATH}"
