@@ -2,12 +2,14 @@
 
 This is a utility to diff and merge LabVIEW source files visually using SourceTree on Windows.
 
+
 ## Requirements
 
 - Windows 10
 - SourceTree 1.9.6.2  
   - Assuming build-in git was selected when installed
 - LabVIEW 2014
+
 
 ## Install and settings
 
@@ -24,6 +26,7 @@ This is a utility to diff and merge LabVIEW source files visually using SourceTr
 
 TODO: screen shot
 
+
 ## Usage
 
 ### Diff
@@ -33,3 +36,22 @@ Suppose you have foo.vi already committed in a git repository, and you have just
 In the file list, right click on the VI and select ```External Diff```.  LabVIEW's diff tool will be launched.
 
 TODO: screen shots
+
+
+## Development
+
+- config.txt ... configuration
+- diff.sh ... wrapper for LVCompare.exe
+
+diff.sh accepts remote and local paths, converts them into DOS format and passes them to LVCompare.exe.
+
+
+## Known issues
+
+- You cannot specify LabVIEW version to open VIs.
+
+
+## References
+
+- license
+- existing project
