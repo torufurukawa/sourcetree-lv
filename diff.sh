@@ -6,8 +6,6 @@ source "${SCRIPT_DIR}/utils.sh"
 REMOTE_FILENAME=$1
 REMOTE_PATH=$(pwd)/./${REMOTE_FILENAME}
 REMOTE_WINPATH=$(dospath "${REMOTE_PATH}")
-echo ${REMOTE_PATH} - ${REMOTE_WINPATH}
-exit;
 
 # Clean local file path
 LOCAL_PATH=$2
