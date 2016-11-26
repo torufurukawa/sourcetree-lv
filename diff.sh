@@ -1,15 +1,13 @@
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE:-$0}")"; pwd)"
 source "${SCRIPT_DIR}/config.txt"
-
-
-function dospath () {
-  echo $(cygpath -d "$1")
-}
+source "${SCRIPT_DIR}/utils.sh"
 
 # Clean remote file path
 REMOTE_FILENAME=$1
 REMOTE_PATH=$(pwd)/./${REMOTE_FILENAME}
 REMOTE_WINPATH=$(dospath "${REMOTE_PATH}")
+echo ${REMOTE_PATH} - ${REMOTE_WINPATH}
+exit;
 
 # Clean local file path
 LOCAL_PATH=$2
