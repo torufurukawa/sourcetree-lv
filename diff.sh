@@ -1,7 +1,5 @@
-SCRIPT_DIR=$(cd $(dirname ${BASH_SOURCE:-$0}); pwd)
-echo "${SCRIPT_DIR}"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE:-$0}")"; pwd)"
 source "${SCRIPT_DIR}/config.txt"
-exit
 
 # Clean remote file path
 REMOTE_FILENAME=$1
