@@ -38,6 +38,11 @@ In the file list, right click on the VI and select ```External Diff```.  LabVIEW
 TODO: screen shots
 
 
+## License
+
+This software is released under the MIT License, see LICENSE.txt.
+
+
 ## Development
 
 - config.txt ... configuration
