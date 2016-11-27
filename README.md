@@ -45,6 +45,11 @@ This software is released under the MIT License, see LICENSE.txt.
 
 ## Development
 
+Run ```./mkdist <version>``` to build distribution package as a zip file.
+
+
+### Files
+
 - config.txt ... configuration
 - diff.sh ... wrapper for LVCompare.exe
 
