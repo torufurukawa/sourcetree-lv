@@ -1,0 +1,27 @@
+#!env bash
+
+SOURCE_DIR=src
+FILENAMES=(
+  config.txt
+  diff.sh
+  utils.sh
+)
+BUILD_BASE_DIR=build
+PACKAGE_NAME=lvdiffmerge
+
+
+version=$1
+
+# Ensure build dir is empty
+build_dir=${BUILD_BASE_DIR}/${PACKAGE_NAME}
+rm -rf ${build_dir}
+mkdir -p ${build_dir}
+
+# Copy sources to build dir
+for filename in ${FILENAMES[@]}; do
+  src=${SOURCE_DIR}/${filename}
+  dst=${build_dir}/${filename}
+  cp ${src} ${dst}
+done
+
+# zip

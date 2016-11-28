@@ -45,7 +45,7 @@ This software is released under the MIT License, see LICENSE.txt.
 
 ## Development
 
-Run ```./mkdist <version>``` to build distribution package as a zip file.
+Run ```tools/pack.sh <version>``` to build distribution package as a zip file.
 
 
 ### Files
