@@ -8,6 +8,7 @@ FILENAMES=(
 )
 BUILD_BASE_DIR=build
 PACKAGE_NAME=lvdiffmerge
+DISTRIBUTION_BASE_DIR=dist
 
 
 version=$1
@@ -24,4 +25,9 @@ for filename in ${FILENAMES[@]}; do
   cp ${src} ${dst}
 done
 
-# zip
+# Copy
+distribution_dir=${DISTRIBUTION_BASE_DIR}/${PACKAGE_NAME}-${version}
+mkdir -p ${distribution_dir}
+echo ${distribution_dir}
+echo ${build_dir}
+cp -r ${build_dir} ${distribution_dir}
