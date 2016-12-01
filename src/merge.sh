@@ -1,6 +1,5 @@
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE:-$0}")"; pwd)"
-source "${SCRIPT_DIR}/config.txt"
-source "${SCRIPT_DIR}/utils.sh"
+source "${SCRIPT_DIR}/init.sh"
 
 # Clean paths
 BASE=$(resolve_path "$1")
