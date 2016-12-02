@@ -22,10 +22,17 @@ This is a utility to diff and merge LabVIEW source files visually using SourceTr
    3. Set External Diff tool to "Custom"
    4. Set Diff command to the path to ```lvdiffmerge\diff.sh```.  For example, if you save lvdifmerge folder in ```C:\My Programs```, set this value to ```C:\My Programs\lvdiffmerge|diff.sh```.
    5. Set Arguments to ```$REMOTE $LOCAL```
+   6. Set Merge command to the path to ```lvdiffmerge\merge.sh```.
+   7. Set Arguments to ```$BASE $REMOTE $LOCAL $MERGED```
    6. Click "OK" button
+5. Configure repository
+   1. In your git repository root, add a file named ```lvdiffmerge.txt```
+   2. Add two lines to refre your LabVIEW diff/merge directory and LabVIEW.
 
-TODO: screen shot
-
+```
+SHARED_DIR="C:\Program Files (x86)\National Instruments\Shared"
+LABVIEW_EXE="C:\Program Files (x86)\National Instruments\LabVIEW 2014\LabVIEW.exe"
+```
 
 ## Usage
 
@@ -35,7 +42,12 @@ Suppose you have foo.vi already committed in a git repository, and you have just
 
 In the file list, right click on the VI and select ```External Diff```.  LabVIEW's diff tool will be launched.
 
-TODO: screen shots
+### Merge
+
+When you try to merge two branches and git claims conflict, try the following.
+
+1. In the file list, right click on the conflict VI, and select Resolve Conflict > External Merge
+2. Merge your VI and click OK.
 
 
 ## License
@@ -59,9 +71,3 @@ diff.sh accepts remote and local paths, converts them into DOS format and passes
 ## Known issues
 
 - You cannot specify LabVIEW version to open VIs.
-
-
-## References
-
-- license
-- existing project
