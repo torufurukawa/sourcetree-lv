@@ -8,4 +8,5 @@ LOCAL=$(resolve_path "$3")
 MERGED=$(resolve_path "$4")
 
 # Launch LabVIEW merge program
+labview_cmd=$(find_labview)
 "${MERGE_CMD}" "${LABVIEW_CMD}" "${BASE}" "${REMOTE}" "${LOCAL}" "${MERGED}"
