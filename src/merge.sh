@@ -9,4 +9,4 @@ MERGED=$(resolve_path "$4")
 
 # Launch LabVIEW merge program
 labview_cmd=$(find_labview)
-"${SHARED_DIR/LabVIEW Merge/LVMerge.exe}" "${LABVIEW_EXE}" "${BASE}" "${REMOTE}" "${LOCAL}" "${MERGED}"
+"${SHARED_DIR}/LabVIEW Merge/LVMerge.exe" "${LABVIEW_EXE}" "${BASE}" "${REMOTE}" "${LOCAL}" "${MERGED}"
