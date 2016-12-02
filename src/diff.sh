@@ -10,4 +10,4 @@ LOCAL_PATH=$2
 LOCAL_WINPATH=$(resolve_path "${LOCAL_PATH}")
 
 # Launch LabVIEW diff program
-"${DIFF_CMD}" "${REMOTE_WINPATH}" "${LOCAL_WINPATH}"
+"${SHARED_DIR}/LabVIEW Compare/LVCompare.exe" "${REMOTE_WINPATH}" "${LOCAL_WINPATH}" -lvpath "$LABVIEW_EXE"

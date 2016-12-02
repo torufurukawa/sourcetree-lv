@@ -1,10 +1,12 @@
 #!env bash
+# Usage: tools/pack.sh <version>
 
 SOURCE_DIR=src
 FILENAMES=(
   config.txt
   diff.sh
-  utils.sh
+  init.sh
+  merge.sh
 )
 BUILD_BASE_DIR=build
 PACKAGE_NAME=lvdiffmerge

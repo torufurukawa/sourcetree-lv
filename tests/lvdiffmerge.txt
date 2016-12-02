@@ -1,2 +1,2 @@
-LABVIEW_VERSION=2014
-# LABVIEW_CMD="C:\Program Files (x86)\National Instruments\LabVIEW 2014\LabVIEW.exe"
+# SHARED_DIR="C:\Program Files (x86)\National Instruments\Shared"
+# LABVIEW_EXE="C:\Program Files (x86)\National Instruments\LabVIEW 2014\LabVIEW.exe"

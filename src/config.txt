@@ -1,4 +1,2 @@
-DIFF_CMD="C:\Program Files (x86)\National Instruments\Shared\LabVIEW Compare\LVCompare.exe"
-MERGE_CMD="C:\Program Files (x86)\National Instruments\Shared\LabVIEW Merge\LVMerge.exe"
-LABVIEW_CMD="C:\Program Files (x86)\National Instruments\LabVIEW 2014\LabVIEW.exe"
-LABVIEW_VERSION=2014
+# SHARED_DIR="C:\Program Files (x86)\National Instruments\Shared"
+# LABVIEW_EXE="C:\Program Files (x86)\National Instruments\LabVIEW 2014\LabVIEW.exe"
